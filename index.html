@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kotagiri Mansi | Cybersecurity & Aspiring SOC Analyst</title>
+  <meta name="description" content="Portfolio of Kotagiri Mansi - B.Tech Cybersecurity student and Aspiring SOC Analyst. Think like an attacker, build like a defender.">
+  <meta name="keywords" content="Kotagiri Mansi, Cybersecurity, SOC Analyst, Network Security, Packet Sniffer, PyWiFi Scanner, Argus Tool, Blue Team">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for clean modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-bracket">&lt;</span>KM<span class="brand-bracket">/&gt;</span>
+        <span class="brand-name">Mansi</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certificates</a>
+        <a href="#contact" class="nav-cta-btn">Get In Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-pulse"></span>
+            <span>3rd-Year B.Tech • Aspiring SOC Analyst</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-text">Kotagiri Mansi</span>
+          </h1>
+
+          <p class="hero-tagline">
+            "Think like an attacker, build like a defender."
+          </p>
+
+          <p class="hero-description">
+            A 3rd-year B.Tech Cybersecurity student passionate about network defense, threat analysis, and practical security tools. Learning networking, cybersecurity tools, and concepts.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Contact Me
+            </a>
+            <a href="https://github.com/mansikotagiri" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/mansi-kotagiri-842bb4346" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">9.21</span>
+              <span class="stat-label">CGPA (up to 4th Sem)</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Security Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Certificates &amp; Workshops</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Terminal / SOC Dashboard Preview -->
+        <div class="hero-terminal">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">soc-terminal@mansi-security:~</div>
+              <div class="terminal-badge">LIVE MONITOR</div>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+              <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">whoami</span></div>
+              <div class="terminal-output">Kotagiri Mansi | Aspiring SOC Analyst</div>
+              
+              <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">cat mission.txt</span></div>
+              <div class="terminal-output highlight-quote">"Think like an attacker, build like a defender."</div>
+              
+              <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">check-skills --summary</span></div>
+              <div class="terminal-output">
+                <span class="term-tag">[Python]</span>
+                <span class="term-tag">[C]</span>
+                <span class="term-tag">[Java]</span>
+                <span class="term-tag">[SQL]</span>
+                <span class="term-tag">[Networking]</span>
+                <span class="term-tag">[Linux]</span>
+              </div>
+
+              <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">soc-alert-feed --status</span></div>
+              <div class="terminal-box">
+                <div class="soc-row"><span class="soc-dot green"></span> <span>Network Interface: eth0 (Promiscuous Mode Ready)</span></div>
+                <div class="soc-row"><span class="soc-dot cyan"></span> <span>Active Project: Argus Adversarial Tool for SOC</span></div>
+                <div class="soc-row"><span class="soc-dot yellow"></span> <span>Wi-Fi Watch: PyWiFi Scanner monitoring SSIDs</span></div>
+                <div class="soc-row"><span class="soc-dot blue"></span> <span>Packet Capture: Scapy Sniffer active</span></div>
+              </div>
+
+              <div class="terminal-line"><span class="prompt">$</span> <span class="cursor">_</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section" id="about">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">Background &amp; Goal</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-bio">
+            <div class="bio-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3>My Passion for Cybersecurity</h3>
+            <p>
+              Hi, I am <strong>Kotagiri Mansi</strong>, currently a 3rd-year B.Tech student in Cyber Security at Swami Vivekananda Institute of Technology with a <strong>CGPA of 9.21 (up to 4th semester)</strong>.
+            </p>
+            <p>
+              I have a strong interest in cybersecurity, network defense, and practical security analysis. I want to build a career as a <strong>SOC (Security Operations Center) Analyst</strong>, helping organizations monitor live traffic, detect security incidents, analyze threats, and protect digital assets from cyber attacks.
+            </p>
+            <p>
+              My approach to security is simple: <em>"Think like an attacker, build like a defender."</em> Understanding how attackers scan networks and exploit vulnerabilities allows me to design better detection rules and defensive safeguards.
+            </p>
+
+            <div class="bio-highlights">
+              <div class="highlight-chip">
+                <span class="chip-icon">🎯</span>
+                <div>
+                  <strong>Primary Career Goal</strong>
+                  <p>SOC Analyst / Blue Team Security Specialist</p>
+                </div>
+              </div>
+              <div class="highlight-chip">
+                <span class="chip-icon">🛡️</span>
+                <div>
+                  <strong>Security Mindset</strong>
+                  <p>Threat detection, packet analysis &amp; defense</p>
+                </div>
+              </div>
+              <div class="highlight-chip">
+                <span class="chip-icon">💡</span>
+                <div>
+                  <strong>Hands-on Practice</strong>
+                  <p>Building Python tools for real-world scenarios</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card quick-info-card">
+            <h3>Quick Details</h3>
+            <ul class="info-list">
+              <li>
+                <span class="info-label">Name</span>
+                <span class="info-val">Kotagiri Mansi</span>
+              </li>
+              <li>
+                <span class="info-label">Focus Area</span>
+                <span class="info-val">Cybersecurity &amp; SOC Defense</span>
+              </li>
+              <li>
+                <span class="info-label">Current Degree</span>
+                <span class="info-val">B.Tech in Cyber Security (3rd Year, 2028)</span>
+              </li>
+              <li>
+                <span class="info-label">Academic Score</span>
+                <span class="info-val highlight-val">9.21 CGPA (up to 4th Sem)</span>
+              </li>
+              <li>
+                <span class="info-label">Location</span>
+                <span class="info-val">Hyderabad, India</span>
+              </li>
+              <li>
+                <span class="info-label">Email</span>
+                <span class="info-val"><a href="mailto:mansikotagiri@gmail.com" class="link-inline">mansikotagiri@gmail.com</a></span>
+              </li>
+              <li>
+                <span class="info-label">Languages</span>
+                <span class="info-val">English, Telugu, Hindi, Marathi</span>
+              </li>
+            </ul>
+
+            <div class="card-action">
+              <a href="#contact" class="btn btn-outline full-width">Send a Message</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section bg-alt" id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">Technical Stack</span>
+          <h2 class="section-title">Skills &amp; Tools</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming & Databases -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon cyan">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="category-title">Programming &amp; Databases</h3>
+            </div>
+
+            <div class="skills-chips-grid">
+              <div class="skill-badge-item">
+                <span class="skill-dot cyan"></span>
+                <span class="skill-name">Python</span>
+              </div>
+              <div class="skill-badge-item">
+                <span class="skill-dot cyan"></span>
+                <span class="skill-name">C</span>
+              </div>
+              <div class="skill-badge-item">
+                <span class="skill-dot cyan"></span>
+                <span class="skill-name">Java</span>
+              </div>
+              <div class="skill-badge-item">
+                <span class="skill-dot cyan"></span>
+                <span class="skill-name">SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Networking -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon emerald">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <h3 class="category-title">Networking</h3>
+            </div>
+
+            <div class="skills-chips-grid">
+              <div class="skill-badge-item">
+                <span class="skill-dot emerald"></span>
+                <span class="skill-name">Networking</span>
+              </div>
+              <div class="skill-badge-item">
+                <span class="skill-dot emerald"></span>
+                <span class="skill-name">TCP / IP</span>
+              </div>
+              <div class="skill-badge-item">
+                <span class="skill-dot emerald"></span>
+                <span class="skill-name">UDP &amp; Protocols</span>
+              </div>
+              <div class="skill-badge-item">
+                <span class="skill-dot emerald"></span>
+                <span class="skill-name">OSI Model</span>
+              </div>
+              <div class="skill-badge-item">
+                <span class="skill-dot emerald"></span>
+                <span class="skill-name">Packet Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon purple">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <h3 class="category-title">Tools</h3>
+            </div>
+
+            <div class="skills-chips-grid">
+              <div class="skill-badge-item">
+                <span class="skill-dot purple"></span>
+                <span class="skill-name">Linux</span>
+              </div>
+              <div class="skill-badge-item">
+                <span class="skill-dot purple"></span>
+                <span class="skill-name">GitHub</span>
+              </div>
+              <div class="skill-badge-item">
+                <span class="skill-dot purple"></span>
+                <span class="skill-name">Scapy</span>
+              </div>
+              <div class="skill-badge-item">
+                <span class="skill-dot purple"></span>
+                <span class="skill-name">VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">Hands-On Work</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Real-world tools developed for network monitoring, wireless defense, and SOC analysis.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Argus Adversarial Tool for SOC -->
+          <div class="project-card featured">
+            <div class="project-badge-tag">SOC Defense</div>
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+              <div>
+                <h3 class="project-title">Argus Adversarial Tool for SOC</h3>
+                <span class="project-category">Threat Emulation &amp; Blue Team Testing</span>
+              </div>
+            </div>
+
+            <p class="project-desc">
+              A defensive testing tool designed to simulate attack patterns, verify SOC alert rules, and help blue teams discover visibility gaps.
+            </p>
+
+            <ul class="project-bullets">
+              <li>Simulates threat behaviors to test SIEM/SOC alert triggers.</li>
+              <li>Helps identify missing detection rules and log blind spots.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SOC Defense</span>
+              <span class="tech-tag">Threat Emulation</span>
+              <span class="tech-tag">Log Analysis</span>
+            </div>
+
+            <div class="project-footer">
+              <span class="project-tag-status">Blue Team Tool</span>
+              <span class="project-tag-status">Python / SOC</span>
+            </div>
+          </div>
+
+          <!-- Project 2: Packet Sniffer -->
+          <div class="project-card">
+            <div class="project-badge-tag">Network Security</div>
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <div>
+                <h3 class="project-title">Packet Sniffer</h3>
+                <span class="project-category">Traffic Capture &amp; Protocol Inspector</span>
+              </div>
+            </div>
+
+            <p class="project-desc">
+              A real-time network traffic sniffer that captures live packets, decodes TCP/UDP headers, and presents stream logs via a Tkinter GUI.
+            </p>
+
+            <ul class="project-bullets">
+              <li>Extracts live IP addresses, source/dest ports, and protocol types.</li>
+              <li>Saves logs for network analysis and displays packets in real time.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scapy</span>
+              <span class="tech-tag">TCP/UDP</span>
+              <span class="tech-tag">Tkinter GUI</span>
+            </div>
+
+            <div class="project-footer">
+              <span class="project-tag-status">Live Traffic Tool</span>
+              <span class="project-tag-status">Tkinter &amp; Scapy</span>
+            </div>
+          </div>
+
+          <!-- Project 3: PyWiFi Scanner -->
+          <div class="project-card">
+            <div class="project-badge-tag">Wireless Defense</div>
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+              </div>
+              <div>
+                <h3 class="project-title">PyWiFi Scanner</h3>
+                <span class="project-category">Wireless Network Security</span>
+              </div>
+            </div>
+
+            <p class="project-desc">
+              A Python tool designed to scan nearby wireless networks, verify SSID security parameters, and alert users against Evil Twin attacks.
+            </p>
+
+            <ul class="project-bullets">
+              <li>Discovers nearby SSIDs and analyzes authentication settings.</li>
+              <li>Flags unencrypted or duplicate rogue access points.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Wi-Fi Scanning</span>
+              <span class="tech-tag">Evil Twin Defense</span>
+              <span class="tech-tag">Scapy</span>
+            </div>
+
+            <div class="project-footer">
+              <span class="project-tag-status">Wireless Scanner</span>
+              <span class="project-tag-status">Evil Twin Defense</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section bg-alt" id="education">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="education-timeline">
+          <!-- Item 1: B.Tech -->
+          <div class="timeline-item current">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="card-meta">
+                <span class="meta-tag">Current Degree</span>
+                <span class="meta-year">Expected 2028</span>
+              </div>
+              <h3 class="institution-name">Swami Vivekananda Institute of Technology</h3>
+              <h4 class="degree-title">B.Tech in Cyber Security</h4>
+              <div class="score-badge">
+                <span class="score-label">CGPA:</span>
+                <span class="score-value">9.21</span>
+                <span class="score-term">(up to 4th Semester)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Intermediate -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="card-meta">
+                <span class="meta-tag">Higher Secondary</span>
+                <span class="meta-year">2024</span>
+              </div>
+              <h3 class="institution-name">Gowtham Junior College</h3>
+              <h4 class="degree-title">Intermediate (MPC – Mathematics, Physics, Chemistry)</h4>
+              <div class="score-badge">
+                <span class="score-label">Percentage:</span>
+                <span class="score-value">93.7%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: School SSC -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="card-meta">
+                <span class="meta-tag">Secondary School</span>
+                <span class="meta-year">2022</span>
+              </div>
+              <h3 class="institution-name">Rainbow High School</h3>
+              <h4 class="degree-title">Secondary School Certificate (SSC - 10th)</h4>
+              <div class="score-badge">
+                <span class="score-label">CGPA:</span>
+                <span class="score-value">9.8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Workshops Section -->
+    <section class="section" id="certifications">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">Credentials &amp; Learning</span>
+          <h2 class="section-title">Certifications &amp; Workshops</h2>
+          <p class="section-subtitle">Practical industry simulations, university workshops, and cybersecurity training.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="creds-dual-grid">
+          <!-- Certifications Column -->
+          <div class="creds-column">
+            <div class="column-title-bar">
+              <div class="column-icon cyan">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </div>
+              <h3>Certifications &amp; Achievements</h3>
+            </div>
+
+            <div class="cert-cards-list">
+              <div class="cert-card">
+                <div class="cert-status-dot"></div>
+                <div class="cert-info">
+                  <h4>Cybersecurity Analyst Job Simulation</h4>
+                  <p class="cert-issuer">Tata Consultancy Services (TCS) via Forage</p>
+                  <p class="cert-note">Practical exercises simulating real SOC analyst tasks, vulnerability triage, and enterprise security workflows.</p>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-status-dot"></div>
+                <div class="cert-info">
+                  <h4>Certification in Artificial Intelligence Fundamentals</h4>
+                  <p class="cert-issuer">IBM</p>
+                  <p class="cert-note">Core foundational concepts of AI systems, data patterns, and modern computational models.</p>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-status-dot"></div>
+                <div class="cert-info">
+                  <h4>Certificate of Participation – Blue Team Cybersecurity</h4>
+                  <p class="cert-issuer">Centre of Excellence in Cybersecurity &amp; DEIS, JNTUH</p>
+                  <p class="cert-note">Hands-on exposure to defensive security practices, log inspection, and defensive posture.</p>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-status-dot"></div>
+                <div class="cert-info">
+                  <h4>Certificate of Participation – Cybersecurity Workshop</h4>
+                  <p class="cert-issuer">IIT Hyderabad (Elan &amp; nVision)</p>
+                  <p class="cert-note">Engaged in intensive sessions on modern cybersecurity tools and attack surfaces.</p>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-status-dot"></div>
+                <div class="cert-info">
+                  <h4>Participation Certificate – Smart India Hackathon (SIH 2025)</h4>
+                  <p class="cert-issuer">Ministry of Education &amp; Innovation Cell</p>
+                  <p class="cert-note">Collaborated in national hackathon solving real-world technological challenges under tight deadlines.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Workshops Column -->
+          <div class="creds-column">
+            <div class="column-title-bar">
+              <div class="column-icon emerald">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <h3>Workshops &amp; Activities</h3>
+            </div>
+
+            <div class="cert-cards-list">
+              <div class="cert-card workshop">
+                <div class="cert-status-dot emerald"></div>
+                <div class="cert-info">
+                  <h4>Cybersecurity Workshop – IIT Hyderabad</h4>
+                  <p class="cert-issuer">Elan &amp; nVision | January 2026</p>
+                  <p class="cert-note">Participated in technical workshops on security techniques, threat vectors, and mitigation tactics.</p>
+                </div>
+              </div>
+
+              <div class="cert-card workshop">
+                <div class="cert-status-dot emerald"></div>
+                <div class="cert-info">
+                  <h4>Blue Team Cybersecurity Workshop</h4>
+                  <p class="cert-issuer">Organized by Centre of Excellence in Cybersecurity and DEIS, JNTUH, Hyderabad</p>
+                  <p class="cert-note">Learned blue team defense methodologies, network analysis fundamentals, and threat hunting insights.</p>
+                </div>
+              </div>
+
+              <div class="cert-card workshop">
+                <div class="cert-status-dot emerald"></div>
+                <div class="cert-info">
+                  <h4>Smart India Hackathon (SIH) 2025</h4>
+                  <p class="cert-issuer">National Innovation Event</p>
+                  <p class="cert-note">Participated with team members to ideate, prototype, and build tech solutions for societal needs.</p>
+                </div>
+              </div>
+
+              <div class="cert-card workshop">
+                <div class="cert-status-dot emerald"></div>
+                <div class="cert-info">
+                  <h4>IBM Workshop</h4>
+                  <p class="cert-issuer">IBM Technology Engagement</p>
+                  <p class="cert-note">Participated in hands-on technology sessions covering emerging software and enterprise concepts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section bg-alt" id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in discussing cybersecurity, SOC analyst opportunities, or collaborating on security tools? Reach out!</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels -->
+          <div class="contact-info-cards">
+            <!-- Email Card -->
+            <div class="contact-channel-card">
+              <div class="channel-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-name">Direct Email</span>
+                <a href="mailto:mansikotagiri@gmail.com" class="channel-link">mansikotagiri@gmail.com</a>
+              </div>
+              <button class="copy-btn" id="copyEmailBtn" data-email="mansikotagiri@gmail.com" title="Copy email address">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span class="copy-tooltip" id="copyTooltip">Copy</span>
+              </button>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <a href="https://www.linkedin.com/in/mansi-kotagiri-842bb4346" target="_blank" rel="noopener noreferrer" class="contact-channel-card clickable">
+              <div class="channel-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-name">LinkedIn Profile</span>
+                <span class="channel-link">linkedin.com/in/mansi-kotagiri</span>
+              </div>
+              <span class="channel-arrow">→</span>
+            </a>
+
+            <!-- GitHub Card -->
+            <a href="https://github.com/mansikotagiri" target="_blank" rel="noopener noreferrer" class="contact-channel-card clickable">
+              <div class="channel-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-name">GitHub Repositories</span>
+                <span class="channel-link">github.com/mansikotagiri</span>
+              </div>
+              <span class="channel-arrow">→</span>
+            </a>
+
+            <!-- Phone Card -->
+            <div class="contact-channel-card">
+              <div class="channel-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-name">Phone Number</span>
+                <span class="channel-link">+91-7815915690</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="contact-form-container">
+            <form class="contact-form" id="contactForm" onsubmit="return false;">
+              <h3>Send a Message</h3>
+              <p class="form-instruction">Feel free to drop a message. I'll get back to you promptly.</p>
+              
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="e.g. john@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="e.g. SOC Analyst Opportunity / Project Query" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Hello Mansi, I would like to connect with you regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-width" id="submitFormBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Send Message
+              </button>
+
+              <div class="form-status" id="formStatus"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="brand-bracket">&lt;</span>KM<span class="brand-bracket">/&gt;</span> Kotagiri Mansi
+          </div>
+          <p class="footer-tagline">"Think like an attacker, build like a defender."</p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://github.com/mansikotagiri" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <span class="dot-separator">•</span>
+          <a href="https://www.linkedin.com/in/mansi-kotagiri-842bb4346" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            LinkedIn
+          </a>
+          <span class="dot-separator">•</span>
+          <a href="mailto:mansikotagiri@gmail.com" class="footer-social-link" title="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Email
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kotagiri Mansi. Built for Cybersecurity &amp; SOC Defense.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
